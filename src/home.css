@@ -19,12 +19,12 @@ li{
 .container{
     height:100vh;
     display: grid;
-    grid-template-columns: 256px 1fr;
+    grid-template-columns: 200px 1fr;
     grid-template-rows: 48px 1fr;
 }
 
 .nav{
-    background-color: #0891b2;
+    background-image: linear-gradient(to bottom, #0891b2, #6366f1);
     grid-row: 1/-1;
 }
 
@@ -33,7 +33,8 @@ li{
     background-image: linear-gradient(to right, #a78bfa, #4f46e5, #5b21b6);
 
     .main-header-title{
-        color:black;
+        letter-spacing: 12px;
+        color:#fff;
         font-weight: bold;
         font-size:20px;
         position: absolute;
@@ -50,6 +51,25 @@ li{
 
 
 /*NAV*/
+#icon{
+    margin-top: 6px;
+    margin-left: 12px;
+}
+
+.icon{
+    color:#fff;
+}
+
+.arrow_icon{
+    margin-top:6px;
+}
+
+svg{
+    path{
+        fill:#fff;
+    }
+}
+
 .one-button{
     font-size:24px;
     margin-top:32px;
@@ -65,6 +85,7 @@ li{
 }
 
 .btn-large{
+    color:#fff;
     cursor:pointer;
     font-size:24px;
     border:none;
@@ -72,8 +93,13 @@ li{
 }
 
 .function{
+    font-size:smaller;
     display:none;
     grid-column:1/-1;
     justify-self: end;
 }
 
+a{
+    text-decoration: none;
+    color:inherit;
+}
